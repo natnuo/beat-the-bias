@@ -1,0 +1,20 @@
+{
+  "name": "Beat the Bias",
+  "version": "1.0.0",
+  "description": "Removes adjectives that show bias.",
+  "manifest_version": 3,
+  "author": "Nathan Tao",
+  "action": {
+    "default_icon": "icon.png",
+    "default_popup": "index.html",
+    "default_title": "Beat the Bias"
+  },
+  "content_scripts": [
+    {
+      "js": ["dist/remover.js"],
+      "matches": [
+        "*://*/*"
+      ]
+    }
+  ]
+}
